@@ -10,7 +10,7 @@ apt install libgl1-mesa-glx
 ```
 
 # import faiss Error: 
-···
+```
 #cpu 版本
 conda install faiss-cpu -c pytorch
 #GPU 版本
