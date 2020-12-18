@@ -1,10 +1,9 @@
-FROM pytorch/pytorch:1.7.0-cuda11.0-cudnn8-devel
-RUN pip install pandas
-RUN pip install opencv-python
-RUN python -m pip install -U pip setuptools
-RUN pip install scipy
-RUN pip install scikit-learn
-RUN pip install PIL
-RUN pip install faiss
+FROM pytorch/pytorch:1.2-cuda10.0-cudnn7-devel
 
-                
+RUN conda install -y faiss-gpu -c pytorch
+
+RUN conda install -y scikit-learn pandas
+
+RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-python
+
+RUN apt update && apt install -y libgl1-mesa-glx
