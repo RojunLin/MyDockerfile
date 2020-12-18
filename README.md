@@ -17,4 +17,4 @@ conda install faiss-cpu -c pytorch
 conda install faiss-gpu cudatoolkit=8.0 -c pytorch # For CUDA8
 conda install faiss-gpu cudatoolkit=9.0 -c pytorch # For CUDA9
 conda install faiss-gpu cudatoolkit=10.0 -c pytorch # For CUDA10
-···
+```
