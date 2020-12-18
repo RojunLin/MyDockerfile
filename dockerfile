@@ -4,6 +4,6 @@ RUN conda install -y faiss-gpu -c pytorch
 
 RUN conda install -y scikit-learn pandas
 
-RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-python
+RUN pip install opencv-python
 
 RUN apt update && apt install -y libgl1-mesa-glx
